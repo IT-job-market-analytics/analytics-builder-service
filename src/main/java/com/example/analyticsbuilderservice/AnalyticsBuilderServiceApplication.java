@@ -8,6 +8,7 @@ public class AnalyticsBuilderServiceApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(AnalyticsBuilderServiceApplication.class, args);
+
     }
 
 }
