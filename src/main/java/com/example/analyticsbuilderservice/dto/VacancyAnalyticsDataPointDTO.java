@@ -4,15 +4,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
-import java.util.Date;
+import java.time.LocalDate;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class VacancyAnalyticsDataPointDTO {
-    private int id;
-    private LocalDateTime date;
+    private LocalDate date;
     private String query;
     private int vacancy_count;
     private double salary;

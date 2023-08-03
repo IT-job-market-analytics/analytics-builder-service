@@ -1,13 +1,11 @@
 package com.example.analyticsbuilderservice.model;
 
-import jakarta.persistence.Entity;
 import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
 
-import java.time.LocalDateTime;
-import java.util.Date;
+import java.time.LocalDate;
 
 @NoArgsConstructor
 @Getter
@@ -21,7 +19,7 @@ public class VacancyAnalyticsDataPoint {
     private int id;
 
     @Column("date")
-    private Date date;
+    private LocalDate date;
 
     @Column("query")
     private String query;
