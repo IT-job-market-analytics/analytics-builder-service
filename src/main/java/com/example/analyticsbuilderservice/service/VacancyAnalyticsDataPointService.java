@@ -13,13 +13,11 @@ public class VacancyAnalyticsDataPointService {
     private final ModelMapper modelMapper = new ModelMapper();
 
     public VacancyAnalyticsDataPointService(
-            VacancyAnalyticsDataPointRepository vacancyAnalyticsDataPointRepository
-    ) {
+            VacancyAnalyticsDataPointRepository vacancyAnalyticsDataPointRepository) {
         this.vacancyAnalyticsDataPointRepository = vacancyAnalyticsDataPointRepository;
     }
 
     public void testCreateVacancy(VacancyAnalyticsDataPointDTO vacancyAnalyticsDataPoint) {
-        System.err.println("передал = " + vacancyAnalyticsDataPoint);
         vacancyAnalyticsDataPointRepository.save(
                 modelMapper.map(vacancyAnalyticsDataPoint, VacancyAnalyticsDataPoint.class)
         );

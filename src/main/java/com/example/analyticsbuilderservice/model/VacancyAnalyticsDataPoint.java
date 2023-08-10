@@ -29,5 +29,4 @@ public class VacancyAnalyticsDataPoint {
 
     @Column("average_salary")
     private double salary;
-
 }
