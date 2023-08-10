@@ -11,8 +11,8 @@ import lombok.ToString;
 @AllArgsConstructor
 public class Salary {
 
-    private int from;
-    private int to;
+    private Integer from;
+    private Integer to;
     private String currency;
     private boolean gross;
 

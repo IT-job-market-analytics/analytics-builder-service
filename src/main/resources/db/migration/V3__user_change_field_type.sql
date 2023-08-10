@@ -1,1 +1,0 @@
-ALTER TABLE Users MODIFY COLUMN telegram_chat_id BIGINT;

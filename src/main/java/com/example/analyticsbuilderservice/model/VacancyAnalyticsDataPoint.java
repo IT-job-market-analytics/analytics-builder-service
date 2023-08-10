@@ -16,7 +16,7 @@ import java.time.LocalDate;
 public class VacancyAnalyticsDataPoint {
 
     @Id
-    private int id;
+    private Integer id;
 
     @Column("date")
     private LocalDate date;

@@ -1,5 +1,5 @@
 
-package com.example.analyticsbuilderservice.dto.hh;
+package com.example.analyticsbuilderservice.model;
 
 import com.fasterxml.jackson.annotation.*;
 

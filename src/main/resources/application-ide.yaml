@@ -1,13 +1,13 @@
 spring:
   rabbitmq:
-    host: 217.25.88.12
-    port: 15672
+    host: localhost
+    port: 5672
     username: analytics_service
     password: password
 
   data:
     mongodb:
-      host: 217.25.88.12
+      host: localhost
       port: 27017
       username: analytics_service
       password: password
@@ -15,10 +15,17 @@ spring:
       auto-index-creation: true
 
   datasource:
-    url: jdbc:mysql://217.25.88.12:3306/analytics_db
+    url: jdbc:mysql://localhost:3306/analytics_db
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: analytics_service
     password: password
 
 rabbitmq:
   queue: analytics-builder-scheduled-tasks-queue
+
+server:
+  port: 8087
+
+logging:
+  level:
+    com.example: debug

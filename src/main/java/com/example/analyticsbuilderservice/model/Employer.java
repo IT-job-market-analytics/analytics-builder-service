@@ -1,6 +1,5 @@
 package com.example.analyticsbuilderservice.model;
 
-import com.example.analyticsbuilderservice.dto.hh.LogoUrlsDto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

@@ -9,9 +9,9 @@ import java.time.LocalDate;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class VacancyAnalyticsDataPointDTO {
+public class VacancyAnalyticsDataPointDto {
     private LocalDate date;
     private String query;
-    private int vacancy_count;
+    private int vacancyCount;
     private double salary;
 }
