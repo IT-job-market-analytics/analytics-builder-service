@@ -1,22 +1,18 @@
 spring:
   rabbitmq:
     host: localhost
-    port: 5672
     username: analytics_service
     password: password
 
   data:
     mongodb:
       host: localhost
-      port: 27017
       username: analytics_service
       password: password
       database: vacancies_db
-      auto-index-creation: true
 
   datasource:
     url: jdbc:mysql://localhost:3306/analytics_db
-    driver-class-name: com.mysql.cj.jdbc.Driver
     username: analytics_service
     password: password
 

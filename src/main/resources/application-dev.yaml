@@ -1,20 +1,17 @@
 spring:
   rabbitmq:
     host: rabbitmq
-    port: 15672
     username: analytics_service
     password: password
 
   data:
     mongodb:
       host: vacancies-db
-      port: 27017
       username: analytics_service
       password: password
       database: vacancies_db
 
   datasource:
     url: jdbc:mysql://analytics-db:3306/analytics_db
-    driver-class-name: com.mysql.cj.jdbc.Driver
     username: analytics_service
     password: password
